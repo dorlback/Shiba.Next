@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.scroll-transparent::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: transparent;
+}
+.scroll-transparent.scroll-thick::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+.scroll-transparent::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+.scroll-transparent::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.45);
+}
+.scroll-transparent.scroll-white::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  transition: all 0.3s;
+  background-clip: padding-box;
+  border: 0.5px solid transparent;
+}
+.scroll-transparent.scroll-white::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+.scroll-transparent.scroll-transparent-light::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+.scroll-transparent.scroll-transparent-light::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+/* 스크롤을 내용 위에 overlay */
+.scroll-overlay {
+  scrollbar-gutter: stable both-edges;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
