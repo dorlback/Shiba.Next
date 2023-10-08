@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faVideo, faSquarePlus, faEnvelope, faUser  } from '@fortawesome/free-solid-svg-icons' 
 
 const FooterNavContainer = tw.div`
-    
     h-12 w-full
     border-t
     border-amber-900

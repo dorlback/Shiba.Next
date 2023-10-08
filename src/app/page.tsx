@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import tw from 'tailwind-styled-components'
 import ShibaDiaryContents from '@/components/diary/ShibaDiaryContents'
+import BasicModal from '@/components/BasicModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export default function Home() {
     return (
         <>
             <HomeContainer>
+                <BasicModal/>
                 <ShibaDiaryContents />
                 <ShibaDiaryContents />
                 <ShibaDiaryContents />

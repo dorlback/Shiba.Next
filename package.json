@@ -24,6 +24,7 @@
     "next-auth": "^4.23.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
     "tailwind-styled-components": "^2.2.0",
     "typescript": "5.2.2"
   },

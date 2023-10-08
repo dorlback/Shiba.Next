@@ -6,7 +6,7 @@ import ShibaLogo from '@/static/images/shiba_logo.png'
 
 const NavContainer = tw.nav`
     flex items-center justify-center
-    w-full h-14
+    w-full h-12 lg:h-14
   bg-shibablue-100
     border-b border-b-amber-900
     scroll-transparent scroll-overlay
@@ -15,7 +15,7 @@ const NavContainer = tw.nav`
 const NavLayout = tw.div`
     max-w-[1600px] 
     flex flex-col items-center justify-between
-    w-full h-full px-4 xl:px-6 py-4 lg:py-3
+    w-full h-full px-4 xl:px-6 py-3
 `
 
 const NavLogoContainer = tw.div`
