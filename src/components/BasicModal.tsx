@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { createPortal } from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClose } from '@fortawesome/free-solid-svg-icons' 
+import tw from 'tailwind-styled-components'
 
 function BasicModal() {
     const [isModalOpened, setIsModalOpened] = useState<Boolean>(false)
